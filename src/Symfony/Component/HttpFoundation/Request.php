@@ -1325,7 +1325,7 @@ class Request
     /**
      * Gets the format associated with the request.
      */
-    public function getContentType(): ?string
+    public function getContentTypeFormat(): ?string
     {
         return $this->getFormat($this->headers->get('CONTENT_TYPE', ''));
     }
